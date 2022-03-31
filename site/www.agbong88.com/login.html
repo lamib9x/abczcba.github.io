@@ -1,0 +1,147 @@
+    <!DOCTYPE html>
+    <html>
+    
+<!-- Mirrored from www.agbong88.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Mar 2022 04:00:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>Login</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="assets/styles/vendors-extensions/login/bootstrap-ex.min56a0.css?ver=2022030300" rel="stylesheet" />
+
+        
+    <link href="assets/bundles/themes/default.min56a0.css?ver=2022030300" rel="stylesheet" />
+    <link href="assets/styles/alpha.slider-captcha56a0.css?ver=2022030300" rel="stylesheet" />
+
+
+</head>
+<body>
+    
+        <div id="divLoading" style="display: none">
+            <h2>
+                Loading... please wait
+            </h2>
+        </div>
+        <div id="mainholder" class="block-login">
+           
+<form id="formLogin" class="form-login" action="Login.php/" method="POST" autocomplete="off">
+
+      
+    <div class="box-lang">
+    <div class="dropdown">
+        <span class="btn dropdown-toggle" type="button" id="langList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="flag" id="flag"></span>
+            <span id="lblLanguage">English</span>
+            <span class="caret"></span>
+            <input type="hidden" value="en-US" id="hidLanguage" name="hidLanguage">
+        </span>
+        <ul class="dropdown-menu" aria-labelledby="langList" id="language-ddl">
+            <li><a href="javascript:;"><span class="flag flag-en" data-language-code="en-US"></span>English</a></li>
+            <li><a href="javascript:;"><span class="flag flag-tw" data-language-code="zh-TW"></span>繁體中文</a></li>
+            <li><a href="javascript:;"><span class="flag flag-cn" data-language-code="zh-CN"></span>简体中文</a></li>
+            <li><a href="javascript:;"><span class="flag flag-jp" data-language-code="ja-JP"></span>日本語</a></li>
+            <li><a href="javascript:;"><span class="flag flag-th" data-language-code="th-TH"></span>ภาษาไทย</a></li>
+            <li><a href="javascript:;"><span class="flag flag-kr" data-language-code="ko-KR"></span>한국어</a></li>
+                <li><a href="javascript:;"><span class="flag flag-vn" data-language-code="vi-VN"></span>Tiếng Việt</a></li>
+        </ul>
+    </div>
+</div>
+
+<h1 class="title login-text">Login</h1>
+
+    <div class="rowlg msg-error" errCode="0" id="errmsg"></div>
+
+<div class="rowlg">
+    <input type="text" class="txt" placeholder="Username" id="email" name="email" value="" tabindex="1" />
+    <i class="icon-user"></i>
+</div>
+
+<div class="rowlg">
+    <input type="password" class="txt" placeholder="Password" id="pass" name="pass" tabindex="2" autocomplete="off" />
+    <i class="icon-lock"></i>
+</div>
+
+<div class="rowlg checkbox">
+    <label>
+        <input name="chb-showpass" type="checkbox" id="chbShowPass" tabindex="3" />
+        <span id="lbShowPass">Show password</span>
+    </label>
+</div>
+
+<div id="captcha" name="captchaToken"></div>
+<input type="hidden" name="browserSize" id="browserSize" value="" />
+<input type="hidden" name="assetAppPath" id="assetAppPath" value="" />
+<div class="list-button">
+    <input type="button" class="btnLogin" value="Login" id="btnLogin" tabindex="5" />
+</div>
+<input type="hidden" id="hiddenAssetAppPaths" value="" />
+
+
+                <input name="code" id="code" type="hidden" value="3406" />
+                <input id="detecas-analysis" name="detecas-analysis" value="{}" type="hidden" />
+                <input id="__tk" name="__tk" value="25af24e7101e15442c87c7f1f00f0cce51cd276f5583" type="hidden" />
+                <input id="captcha_result" name="captcha_result" value="" type="hidden" />
+                <input name="__RequestVerificationToken" type="hidden" value="WFPKPuXprCE8YGjwPOXelAfOxAGFBERHHKN76IhZ-cgFrqcquuuL1o4Apgq-rwe7aYmOMKNxWgThE5rDQDKm_Ap8frE1" />
+            </form>
+        </div>
+
+        <script src="assets/bundles/login.min56a0.js?ver=2022030300" type="text/javascript"></script>
+
+<input id="ModelErrCode" name="ModelErrCode" type="hidden" value="0" />
+<input id="ModelErrMsg" name="ModelErrMsg" type="hidden" value="" />
+<input id="ModelLanguage" name="ModelLanguage" type="hidden" value="0" />
+<input id="ModelIp" name="ModelIp" type="hidden" value="42.112.239.117" />
+<input id="ModelUTMS" name="ModelUTMS" type="hidden" value="76A88FD47B46883EDE76A51757008F" />
+<input id="ModelDomain" name="ModelDomain" type="hidden" value="www.agbong88.com" />
+<input id="ModelCaptcha" name="ModelCaptcha" type="hidden" value="3406" />
+<input id="CommonAppSettingFpsActivator" name="CommonAppSettingFpsActivator" type="hidden" value="//sc.detecas.com/di;//sc.saceted.com/di;//sc.casemed.net/di" />
+<input id="RootUrl" name="RootUrl" type="hidden" value="/" />
+<style>
+    .grecaptcha-badge {
+        display: none !important;
+    }
+</style>
+<script type="text/javascript">
+    var _page = {
+        errCode: 0,
+        errMsg: '',
+        language: 0,
+        ip: '',
+        __utms: '',
+        domain: '',
+        captcha: '',
+        fpsActivator: ''
+    };
+
+    _page.errCode = document.getElementById("ModelErrCode").value;
+    _page.errMsg = document.getElementById("ModelErrMsg").value;
+    _page.language = document.getElementById("ModelLanguage").value;
+    _page.ip = document.getElementById("ModelIp").value;
+    _page.__utms = document.getElementById("ModelUTMS").value;
+    _page.domain = document.getElementById("ModelDomain").value;
+    _page.captcha = document.getElementById("ModelCaptcha").value;
+    _page.fpsActivator = document.getElementById("CommonAppSettingFpsActivator").value;
+
+    window.rootUrl = document.getElementById("RootUrl").value;
+</script>
+
+
+
+
+<script src="assets/scripts/login/fps56a0.js?ver=2022030300" type="text/javascript"></script>
+
+
+
+        
+
+        
+
+
+
+        
+    </body>
+
+<!-- Mirrored from www.agbong88.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Mar 2022 04:00:19 GMT -->
+</html>
